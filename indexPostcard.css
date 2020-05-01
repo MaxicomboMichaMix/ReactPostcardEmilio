@@ -1,0 +1,27 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.postCard {
+    display: flex;
+    padding: 1em;
+    border-radius: 1rem;
+    -webkit-box-shadow: 10px 10px 30px -12px rgba(125,112,125,1);
+    -moz-box-shadow: 10px 10px 30px -12px rgba(125,112,125,1);
+    box-shadow: 10px 10px 30px -12px rgba(125,112,125,1);
+    margin: 4rem;
+}
+
+.postImage {
+    width: 200px;
+    height: 200px;
+    background-size:cover;
+    margin: 2em;
+
+    background-image: url(csDogger.jpg);
+}
+
+p{
+    color: white;
+    margin: 1em;
+}

@@ -1,0 +1,51 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="indexPostcard.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const rootElement = document.getElementById('root');
+
+        const PostCard = (props) => {
+            return (
+                <div className="postcard"> 
+                    <div className="postImage">
+                    <p>Cool Computer Dogger</p>
+                    </div>
+                    <div className="Content">
+                        <h1 className="">{props.to}</h1>
+                        <h1 className="">{props.msg}</h1>
+
+                        <h5>Atte. Emilio Sanchez</h5>
+                    </div>
+                </div>
+            )
+        }
+
+        PostCard.propTypes = {
+            to: PropTypes.string.isRequired,
+            msg: PropTypes.string.isRequired,
+        }
+
+        const props = {
+            to: 'Computer Science Dogger',
+            msg: 'we need more ram, wow',
+        }
+
+
+        const RootJSX = (
+            <>
+                <PostCard {...props}></PostCard>
+            </>
+        )
+
+        ReactDOM.render(RootJSX,rootElement);
+    </script>
+</body>
