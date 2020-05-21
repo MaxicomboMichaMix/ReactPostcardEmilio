@@ -1,6 +1,5 @@
 <head>
     <link rel="stylesheet" type="text/css" href="indexPostcard.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
@@ -12,6 +11,12 @@
 
     <script type="text/babel">
         const rootElement = document.getElementById('root');
+
+
+        const postcardStyle = {
+            backgroundColor: '#05386B',
+            fontStyle: 'oblique'
+        }
 
         const PostCard = (props) => {
 
@@ -70,19 +75,16 @@
 
 
         PostCard.propTypes = {
-            to: PropTypes.objectOf(PropTypes.string),
-            msg: PropTypes.string.isRequired,
-            color: PropTypes.string,
-            font: PropTypes.oneOf(['simple','cursive'])
         }
 
         const props = {
+            style: PropTypes.object
         }
 
 
         const RootJSX = (
             <>
-                <PostCard {...props}></PostCard>
+                <PostCard style={postcardStyle}></PostCard>
             </>
         )
 
