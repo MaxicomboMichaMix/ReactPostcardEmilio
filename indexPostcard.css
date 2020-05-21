@@ -22,6 +22,14 @@
 }
 
 p{
-    color: white;
+    color: black;
     margin: 1em;
+}
+
+.box_borderTo{
+border border:black-500 py-2 px-3 mb-5
+}
+
+.box_borderMsg{
+border border:black-500 py-2 px-3 mb-5
 }
