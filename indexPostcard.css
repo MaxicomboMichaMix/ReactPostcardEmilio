@@ -33,3 +33,7 @@ border border:black-500 py-2 px-3 mb-5
 .box_borderMsg{
 border border:black-500 py-2 px-3 mb-5
 }
+
+.messageInput{
+    margin: 1em;
+}
